@@ -54,18 +54,22 @@ concessionaria/
 ├── src/
 │   ├── App.jsx          # Componente principal
 │   ├── main.jsx         # Entry point
-│   └── index.css        # Estilos globais
-├── components/          # Componentes React
-│   ├── Navbar.js
-│   ├── HeroCarousel.js
-│   ├── CarCard.js
-│   └── ...
-├── config/              # Configurações
-│   └── gemini.js       # API Gemini
-├── data/                # Dados mockados
-│   └── mockData.js
-├── utils/               # Utilitários
-│   └── helpers.js
+│   ├── index.css        # Estilos globais
+│   ├── components/      # Componentes React
+│   │   ├── Navbar.js
+│   │   ├── HeroCarousel.js
+│   │   ├── CarCard.js
+│   │   ├── StockView.js
+│   │   ├── AdminDashboard.js
+│   │   └── ...
+│   ├── config/          # Configurações
+│   │   └── gemini.js    # API Gemini
+│   ├── data/            # Dados mockados
+│   │   └── mockData.js
+│   └── utils/           # Utilitários
+│       └── helpers.js
+├── public/               # Arquivos estáticos
+│   └── vite.svg
 ├── index.html           # HTML principal
 ├── package.json         # Dependências
 ├── vite.config.js       # Configuração Vite

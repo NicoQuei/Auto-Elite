@@ -1,31 +1,35 @@
 import React, { useState, useEffect } from 'react';
 import { Search, ArrowRight, Lock, Mail, Instagram, Facebook } from 'lucide-react';
 
-import { callGeminiAPI } from '../config/gemini';
+// Importações de Configuração
+import { callGeminiAPI } from './config/gemini';
 
-import { initialCars } from '../data/mockData';
+// Importações de Dados
+import { initialCars } from './data/mockData';
 
-import { formatCurrency, Button } from '../utils/helpers';
+// Importações de Utilitários
+import { formatCurrency, Button } from './utils/helpers';
 
-import { Navbar } from '../components/Navbar';
-import { HeroCarousel } from '../components/HeroCarousel';
-import { CarCard } from '../components/CarCard';
-import { StockView } from '../components/StockView';
-import { FavoritesView } from '../components/FavoritesView';
-import { AboutSection } from '../components/AboutSection';
-import { ServicesSection } from '../components/ServicesSection';
-import { BlogSection } from '../components/BlogSection';
-import { LocationSection } from '../components/LocationSection';
-import { FAQSection } from '../components/FAQSection';
-import { ModalWithCalculator } from '../components/ModalWithCalculator';
-import { PrivacyPolicyView } from '../components/PrivacyPolicyView';
-import { TermsOfUseView } from '../components/TermsOfUseView';
-import { ComparisonModal } from '../components/ComparisonModal';
-import { ValuationView } from '../components/ValuationView';
-import { AdminLogin } from '../components/AdminLogin';
-import { AdminDashboard } from '../components/AdminDashboard';
-import { AIChatWidget } from '../components/AIChatWidget';
-import { ContactView } from '../components/ContactView';
+// Importações de Componentes
+import { Navbar } from './components/Navbar';
+import { HeroCarousel } from './components/HeroCarousel';
+import { CarCard } from './components/CarCard';
+import { StockView } from './components/StockView';
+import { FavoritesView } from './components/FavoritesView';
+import { AboutSection } from './components/AboutSection';
+import { ServicesSection } from './components/ServicesSection';
+import { BlogSection } from './components/BlogSection';
+import { LocationSection } from './components/LocationSection';
+import { FAQSection } from './components/FAQSection';
+import { ModalWithCalculator } from './components/ModalWithCalculator';
+import { PrivacyPolicyView } from './components/PrivacyPolicyView';
+import { TermsOfUseView } from './components/TermsOfUseView';
+import { ComparisonModal } from './components/ComparisonModal';
+import { ValuationView } from './components/ValuationView';
+import { AdminLogin } from './components/AdminLogin';
+import { AdminDashboard } from './components/AdminDashboard';
+import { AIChatWidget } from './components/AIChatWidget';
+import { ContactView } from './components/ContactView';
 
 export default function AutoEliteApp() {
   const [currentView, setCurrentView] = useState('home'); 
